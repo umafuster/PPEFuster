@@ -30,8 +30,6 @@ export default class ProductManager {
             thumbnail,
         }
 
-        // Para que me traiga todo lo que ya tengo dentro de products y agregue el nuevo
-        /*         this.products = await this.getProducts() */
         this.products.push(newProduct)
         await fs.writeFile(this.path, JSON.stringify(this.products))
 

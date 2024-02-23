@@ -22,26 +22,12 @@ cartsRouter.get('/:cid', async (req, res) => {
 
 })
 
-/* cartsRouter.post('/:cid/product/:pid', async (req, res) => {
-    const { cid, pid } = req.params
-    try {
-    //await carts.addProductToCart(cid, pid)
-    const cart = await cartManager.addProductToCart(parseInt(cid), parseInt(pid));
-    res.status(200).send({status: "Success Product Added To Cart", cart})
-    } catch (error) {
-        res.status(400).send({status: "Error Product Not Added To Cart"})
-    } 
-
-}) */
 
 cartsRouter.post('/:cid/product/:pid', async (req, res) => {
     const { cid, pid } = parseInt(req.params)
 
     try {
-
         const answer = await carts.addProductToCart(cid, pid)
-        //await carts.addProductToCart(parseInt(cid), parseInt(pid));
-        //res.send(answer)
         res.status(200).send({ status: "Success Product Added To Cart", answer })
     } catch (error) {
         res.status(400).send({ status: "Error Product Not Added To Cart" })

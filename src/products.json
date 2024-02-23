@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Audi A4",
+        "description": "The A4 is available as a sedan and station wagon.",
+        "code": "9801",
+        "price": 12000,
+        "status": true,
+        "stock": 13,
+        "category": "cars",
+        "thumbnail": "public/Images/AA4.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Audi A8",
+        "description": "The Audi A8 is a full-size luxury sedan.",
+        "code": "9802",
+        "price": 15000,
+        "status": "true",
+        "stock": 8,
+        "category": "cars",
+        "thumbnail": "public/Images/AA8.jpg"
+    }
+]

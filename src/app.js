@@ -9,11 +9,8 @@ import CartManager  from "./Components/CartManager.js"
 import { productsRouter } from "./Routes/productsRouter.js"
 import { cartsRouter } from "./Routes/cartsRouter.js"
 
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// Importo __dirname
+import __dirname from "../utils.js"
 
 const app = express()
 
